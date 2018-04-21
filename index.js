@@ -28,9 +28,10 @@ app.post('/send', (req, res) => {
     <h3>Contact Details</h3>
     <ul>
         <li>Name: ${req.body.name}</li>
-        <li>Company: ${req.body.company}</li>
+        <li>Time/Date: ${req.body.time}</li>
         <li>Email: ${req.body.email}</li>
-        <li>Number: ${req.body.phone}</li>           
+        <li>Phone: ${req.body.phone}</li>
+        <li>Address: ${req.body.address}</li>           
     </ul>
     <h3>Message</h3>
     <p>${req.body.message}</p>
@@ -42,7 +43,7 @@ app.post('/send', (req, res) => {
         secure: false, // true for 465, false for other ports
         auth: {
             user: 'vgdoughrva@gmail.com', // generated ethereal user
-            pass: 'oughboy15!' // generated ethereal password
+            pass: 'ughboy15!' // generated ethereal password
         },
         tls:{
             rejectUnauthorized: false
